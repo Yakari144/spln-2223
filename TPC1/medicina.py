@@ -5,7 +5,7 @@ import json
 # Load your PDF
 #os.system("pdftohtml -f 20 -l 543 -xml medicina.pdf");
 fi = open("medicina.xml", "r")
-fo = open("output2.xml", "w+")
+fo = open("output.xml", "w+")
 
 completos=0
 incompletos=0
@@ -84,18 +84,16 @@ def marcaE(text):
     for elem in entries:
         if re.match(r'^C', elem):
             k,v = marcaEC(elem);
-            if k in dicionario:
-                print("repetido em "+k)
-                repetidos+=1
+            #if k in dicionario:
+            #    print("repetido em "+k)
+            #    repetidos+=1
             dicionario[k] = v;
             completos+=1
         elif re.match(r'^L', elem):
             k,v = marcaEL(elem);
             dicionario[k] = v;
             incompletos+=1
-        else:
-            print(elem)
-    print("Total repetidos: "+str(repetidos))
+    #print("Total repetidos: "+str(repetidos))
 
 
 def removeStartEndSpaces(i):
