@@ -84,9 +84,9 @@ def marcaE(text):
     for elem in entries:
         if re.match(r'^C', elem):
             k,v = marcaEC(elem);
-            #if k in dicionario:
-            #    print("repetido em "+k)
-            #    repetidos+=1
+            if k in dicionario:
+                print("repetido em "+k)
+                repetidos+=1
             dicionario[k] = v;
             completos+=1
         elif re.match(r'^L', elem):
@@ -109,13 +109,13 @@ def idiomasHandle(idiomas):
     flag=""
     for i in idiomas:
         i = removeStartEndSpaces(i)
-        if i == "es":
+        if i == "es" and flag != "es":
             flag="es"
-        elif i == "en":
+        elif i == "en" and flag != "en":
             flag="en"
-        elif i == "pt":
+        elif i == "pt" and flag != "pt":
             flag="pt"
-        elif i == "la":
+        elif i == "la" and flag != "la":
             flag="la"
         else:
             if flag == "es":
@@ -188,10 +188,16 @@ def marcaEC(text):
     if len(lSinVar) > 0:
         sinVar = sinVarHandle(lSinVar)
 
-    sin = sinVar.get('sin',sinVar)
-    var = sinVar.get('var',sinVar)
+    if 'sin' in sinVar:
+        sin = sinVar.get('sin',sinVar)
+    else:
+        sin = []
+    if 'var' in sinVar:
+        var = sinVar.get('var',sinVar)
+    else:
+        var = []
 
-    return "C"+id, {'termo':termo, 'tipo':tipo, 'areaT':areaT, 'idiomas':idiomas, 'sin':sin, 'var':var, 'notas':notas}
+    return "C"+id, {'termo':termo,'tipo':tipo, 'areaT':areaT, 'idiomas':idiomas, 'sin':sin, 'var':var, 'notas':notas}
 
 def marcaEL(text):
     global idL

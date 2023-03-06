@@ -1,0 +1,26 @@
+dic : Es
+
+Es : E LINHA_B Es
+    | E
+
+E : Itens
+
+Itens : Item ',' '\n' Itens
+    | Item
+
+Item : AtrC
+    | Ling
+
+AtrC : ID ':' VALOR
+
+Ling : IDL ':' '\n' Ts
+
+Ts : Ts '\n' T
+    | T
+
+T : '-' VALOR AtrTs
+
+AtrTs : AtrTs AtrT
+    | AtrT
+
+AtrT : '\n' '+' ID ':' VALOR

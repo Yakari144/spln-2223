@@ -1622,9 +1622,7 @@ $ SIN.- AFP (sg)
 @ AFP (sg)
 @ ; 
 @ alfa-fetoproteína
-%%%C 139 
-§ algor mortis
-%%%L m
+%%%C 139 algor mortis m
 § Termos xerais
 @  es 
 @ algor mortis
@@ -1690,9 +1688,7 @@ $ VAR.- alopecia androxenética
 @ alopecia androgenética
 @ ; 
 @ alopecia  androgénica
-%%%C 144 
-§ alopecia areata
-%%%L f
+%%%C 144 alopecia areata f
 §  Patoloxías
 @  es 
 @ alopecia areata
@@ -9894,9 +9890,7 @@ $ VAR.- cateterización (f)
 @ cateterismo cardíaco
 %%%L cateterización
 $ Vid.- cateterismo
-%%%C 826 
-§ cauda equina
-%%%L f
+%%%C 826 cauda equina f
 § Anatomía
 $ SIN.- cola de cabalo
 @  es 
@@ -11972,9 +11966,7 @@ $ Vid.- clitorimegalia
 @ clitoroplasty
 @  pt 
 @ clitoroplastia
-%%%C 1004 
-§ clivus
-%%%L m
+%%%C 1004 clivus m
 § Anatomía
 $ SIN.- canal basilar
 @  es 
@@ -13871,9 +13863,7 @@ $ SIN.- coprofrasia
 @ coprophrasia
 @  pt 
 @ coprolalia
-%%%C 1169 
-§ cor pulmonale
-%%%L m
+%%%C 1169 cor pulmonale m
 §  Etiopatoxenia
 @  es 
 @ cor pulmonale
@@ -14332,9 +14322,7 @@ $ SIN.- tubérculo mamilar
 @ corpus vertebrae
 %%%L corpo vítreo
 $ Vid.- humor vítreo
-%%%C 1205 
-§ corpus albicans
-%%%L m
+%%%C 1205 corpus albicans m
 § Histoloxía
 $ SIN.- corpo branco 
 $ VAR.- corpo  albicans
@@ -14354,9 +14342,7 @@ $ VAR.- corpo  albicans
 @ corpo branco
 @ ; 
 @ corpus albicans
-%%%C 1206 
-§ corpus luteum
-%%%L m
+%%%C 1206 corpus luteum m
 § Histoloxía
 $ SIN.- corpo amarelo 
 $ VAR.- corpo lúteo
@@ -14856,9 +14842,7 @@ $ Vid.- orquiopexia
 @ crista
 %%%L crista de galo
 $ Vid.-  crista galli
-%%%C 1246 
-§ crista galli 
-%%%L f
+%%%C 1246 crista galli f
 §  Anatomía
 $ VAR.- crista de galo
 @  es 
@@ -16508,9 +16492,7 @@ $ SIN.-  diabetes insipidus
 @ ; 
 @ diabetes insipidus diabetes insipidus
 $ Vid.- diabetes insípida
-%%%C 1381 
-§ diabetes mellitus
-%%%L f
+%%%C 1381 diabetes mellitus f
 § Patoloxías
 $ SIN.- diabetes sacarina
 @  es 
@@ -16644,9 +16626,7 @@ $ VAR.- diagnose (f)
 @ differential diagnosis
 @  pt 
 @ diagnóstico diferencial
-%%%C 1391 diagnóstico 
-§ post mortem
-%%%L m
+%%%C 1391 diagnóstico post mortem m
 § Termos xerais
 @  es 
 @ diagnóstico post mortem
@@ -23920,9 +23900,7 @@ $ Vid.- fecundación  in vitro
 @ foetus
 @  pt 
 @ feto
-%%%C 2015 
-§ fetor hepaticus
-%%%L m
+%%%C 2015 fetor hepaticus m
 § Semioloxía
 $ SIN.- alento hepático
 @  es 
@@ -30972,8 +30950,7 @@ $ SIN.- alfa-1-antitripsina (f)
 @ noradrenaline reuptake inhibitor
 @  pt 
 @ inibidor da recaptação de  noradrenalina
-%%%C 2633 inhibidor da testosterona 
-%%%C 5-alfa reductase m
+%%%C 2633 inhibidor da testosterona 5-alfa reductase m
 § Farmacoloxía
 @  es 
 @ inhibidor de la testosterona 5-alfa  reductasa
@@ -32207,9 +32184,7 @@ $ Vid.- labio leporino
 @ labirinto ósseo
 @  la 
 @ labyrinthus osseus
-%%%C 2744 
-§ labrum
-%%%L articular m
+%%%C 2744 labrum articular m
 §  Anatomía
 @  es 
 @ labrum
@@ -36494,9 +36469,7 @@ $ SIN.- miodinia
 @ miodinia
 %%%L miastenia grave
 $ Vid.-  miastenia  gravis
-%%%C 3115 
-§ miastenia gravis
-%%%L f
+%%%C 3115 miastenia gravis f
 § Patoloxías
 $ VAR.- miastenia grave
 @  es 
@@ -45292,9 +45265,7 @@ $ SIN.- caquexia hipofisaria (f); caquexia  pituitaria (f)
 @ panniculitis
 @  pt 
 @ paniculite
-%%%C 3810 
-§ pannus
-%%%L m
+%%%C 3810 pannus m
 §  Anatomía patolóxica
 $ VAR.- pano
 @  es 
@@ -48453,9 +48424,7 @@ $ Vid.- sedestación
 @ postprandial
 @  pt 
 @ pós-prandial
-%%%C 4081 
-§ post mortem
-%%%L loc
+%%%C 4081 post mortem loc
 § Termos xerais
 @  es 
 @ post mortem
@@ -52758,9 +52727,7 @@ $ Vid.- mucosa  respiratoria nasal
 @ rifamicina
 %%%L rigor
 $ Vid.- rixidez
-%%%C 4445 
-§ rigor mortis
-%%%L m
+%%%C 4445 rigor mortis m
 § Termos xerais
 @  es 
 @ rigor mortis
@@ -60035,9 +60002,7 @@ $ SIN.- trompa uterina; trompa de  Falopio; oviduto (m)
 @ tuba uterina
 %%%L tubectomía 
 $ Vid.- salpinxectomía
-%%%C 5057 
-§ tuber cinereum
-%%%L m
+%%%C 5057 tuber cinereum m
 § Anatomía
 @  es 
 @ tuber cinereum

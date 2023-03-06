@@ -1,0 +1,43 @@
+tipo: "f",
+areaT: "Fisioloxía Anatomía",
+es:
+    - "adducción";
+    - "aducción";
+    - "aproximación"
+,
+en:
+    - "adduction"
+,
+pt:
+    - "adução";
+    - "aproximação"
+,
+la:
+    - "adductio"
+,
+ga:
+    - "adución"
+        + sin : "aproximación";
+        + var : "adúción"
+--
+tipo: "f",
+areaT: "Fisioloxía Anatomía",
+es:
+    - "adducción";
+    - "aducción";
+    - "aproximación"
+,
+en:
+    - "adduction"
+,
+pt:
+    - "adução";
+    - "aproximação"
+,
+la:
+    - "adductio"
+,
+ga:
+    - "adución"
+        + sin : "aproximación";
+        + var : "adúción"
