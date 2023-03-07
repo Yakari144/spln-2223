@@ -5,7 +5,7 @@ Es : E LINHA_B Es
 
 E : Itens
 
-Itens : Item ',' '\n' Itens
+Itens : Item ',' Itens
     | Item
 
 Item : AtrC
@@ -13,14 +13,17 @@ Item : AtrC
 
 AtrC : ID ':' VALOR
 
-Ling : IDL ':' '\n' Ts
+Ling : IDL ':' Ts
 
-Ts : Ts '\n' T
+Ts : Ts ';' T
     | T
 
 T : '-' VALOR AtrTs
 
-AtrTs : AtrTs AtrT
-    | AtrT
+AtrTs : AtrTs2
+    |
 
-AtrT : '\n' '+' ID ':' VALOR
+AtrTs2 : AtrTs2 AtrT
+      | AtrT
+
+AtrT : '+' ID ':' VALOR

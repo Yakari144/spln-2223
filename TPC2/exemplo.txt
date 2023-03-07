@@ -17,7 +17,7 @@ la:
 ,
 ga:
     - "adución"
-        + sin : "aproximación";
+        + sin : "aproximación"
         + var : "adúción"
 --
 tipo: "f",
@@ -39,5 +39,6 @@ la:
 ,
 ga:
     - "adución"
-        + sin : "aproximación";
-        + var : "adúción"
+        + sin : "aproximación"
+        + var : "adúción";
+    - "aproximación"

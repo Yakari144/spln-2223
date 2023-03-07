@@ -73,8 +73,8 @@ def p_15(p):
     p[0] = ""
 
 def p_16(p):
-    "AtrTs2 : AtrTs2 ';' AtrT"
-    p[0] = p[1] + p[2] + p[3]
+    "AtrTs2 : AtrTs2 AtrT"
+    p[0] = p[1] +  p[2]
 
 def p_17(p):
     "AtrTs2 : AtrT"

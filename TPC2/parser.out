@@ -18,7 +18,7 @@ Rule 12    Ts -> T
 Rule 13    T -> - VALOR AtrTs
 Rule 14    AtrTs -> AtrTs2
 Rule 15    AtrTs -> <empty>
-Rule 16    AtrTs2 -> AtrTs2 ; AtrT
+Rule 16    AtrTs2 -> AtrTs2 AtrT
 Rule 17    AtrTs2 -> AtrT
 Rule 18    AtrT -> + ID : VALOR
 
@@ -28,7 +28,7 @@ Terminals, with rules where they appear
 ,                    : 5
 -                    : 13
 :                    : 9 10 18
-;                    : 11 16
+;                    : 11
 ID                   : 9 18
 IDL                  : 10
 LINHA_B              : 2
@@ -275,7 +275,7 @@ state 21
     (13) T -> - VALOR . AtrTs
     (14) AtrTs -> . AtrTs2
     (15) AtrTs -> .
-    (16) AtrTs2 -> . AtrTs2 ; AtrT
+    (16) AtrTs2 -> . AtrTs2 AtrT
     (17) AtrTs2 -> . AtrT
     (18) AtrT -> . + ID : VALOR
 
@@ -312,21 +312,22 @@ state 23
 state 24
 
     (14) AtrTs -> AtrTs2 .
-    (16) AtrTs2 -> AtrTs2 . ; AtrT
+    (16) AtrTs2 -> AtrTs2 . AtrT
+    (18) AtrT -> . + ID : VALOR
 
-  ! shift/reduce conflict for ; resolved as shift
+    ;               reduce using rule 14 (AtrTs -> AtrTs2 .)
     ,               reduce using rule 14 (AtrTs -> AtrTs2 .)
     LINHA_B         reduce using rule 14 (AtrTs -> AtrTs2 .)
     $end            reduce using rule 14 (AtrTs -> AtrTs2 .)
-    ;               shift and go to state 27
+    +               shift and go to state 26
 
-  ! ;               [ reduce using rule 14 (AtrTs -> AtrTs2 .) ]
-
+    AtrT                           shift and go to state 27
 
 state 25
 
     (17) AtrTs2 -> AtrT .
 
+    +               reduce using rule 17 (AtrTs2 -> AtrT .)
     ;               reduce using rule 17 (AtrTs2 -> AtrT .)
     ,               reduce using rule 17 (AtrTs2 -> AtrT .)
     LINHA_B         reduce using rule 17 (AtrTs2 -> AtrT .)
@@ -342,47 +343,36 @@ state 26
 
 state 27
 
-    (16) AtrTs2 -> AtrTs2 ; . AtrT
-    (18) AtrT -> . + ID : VALOR
+    (16) AtrTs2 -> AtrTs2 AtrT .
 
-    +               shift and go to state 26
+    +               reduce using rule 16 (AtrTs2 -> AtrTs2 AtrT .)
+    ;               reduce using rule 16 (AtrTs2 -> AtrTs2 AtrT .)
+    ,               reduce using rule 16 (AtrTs2 -> AtrTs2 AtrT .)
+    LINHA_B         reduce using rule 16 (AtrTs2 -> AtrTs2 AtrT .)
+    $end            reduce using rule 16 (AtrTs2 -> AtrTs2 AtrT .)
 
-    AtrT                           shift and go to state 29
 
 state 28
 
     (18) AtrT -> + ID . : VALOR
 
-    :               shift and go to state 30
+    :               shift and go to state 29
 
 
 state 29
 
-    (16) AtrTs2 -> AtrTs2 ; AtrT .
+    (18) AtrT -> + ID : . VALOR
 
-    ;               reduce using rule 16 (AtrTs2 -> AtrTs2 ; AtrT .)
-    ,               reduce using rule 16 (AtrTs2 -> AtrTs2 ; AtrT .)
-    LINHA_B         reduce using rule 16 (AtrTs2 -> AtrTs2 ; AtrT .)
-    $end            reduce using rule 16 (AtrTs2 -> AtrTs2 ; AtrT .)
+    VALOR           shift and go to state 30
 
 
 state 30
 
-    (18) AtrT -> + ID : . VALOR
-
-    VALOR           shift and go to state 31
-
-
-state 31
-
     (18) AtrT -> + ID : VALOR .
 
+    +               reduce using rule 18 (AtrT -> + ID : VALOR .)
     ;               reduce using rule 18 (AtrT -> + ID : VALOR .)
     ,               reduce using rule 18 (AtrT -> + ID : VALOR .)
     LINHA_B         reduce using rule 18 (AtrT -> + ID : VALOR .)
     $end            reduce using rule 18 (AtrT -> + ID : VALOR .)
 
-WARNING: 
-WARNING: Conflicts:
-WARNING: 
-WARNING: shift/reduce conflict for ; in state 24 resolved as shift

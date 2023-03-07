@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = "ID IDL LINHA_B VALORdic : EsEs : E LINHA_B EsEs : EE : ItensItens : Item ',' ItensItens : ItemItem : AtrCItem : LingAtrC : ID ':' VALORLing : IDL ':' TsTs : Ts ';' TTs : TT : '-' VALOR AtrTsAtrTs : AtrTs2AtrTs : AtrTs2 : AtrTs2 ';' AtrTAtrTs2 : AtrTAtrT : '+' ID ':' VALOR"
+_lr_signature = "ID IDL LINHA_B VALORdic : EsEs : E LINHA_B EsEs : EE : ItensItens : Item ',' ItensItens : ItemItem : AtrCItem : LingAtrC : ID ':' VALORLing : IDL ':' TsTs : Ts ';' TTs : TT : '-' VALOR AtrTsAtrTs : AtrTs2AtrTs : AtrTs2 : AtrTs2 AtrTAtrTs2 : AtrTAtrT : '+' ID ':' VALOR"
     
-_lr_action_items = {'ID':([0,10,11,26,],[8,8,8,28,]),'IDL':([0,10,11,],[9,9,9,]),'$end':([1,2,3,4,5,6,7,14,15,16,17,18,21,22,23,24,25,29,31,],[0,-1,-3,-4,-6,-7,-8,-2,-5,-9,-10,-12,-15,-11,-13,-14,-17,-16,-18,]),'LINHA_B':([3,4,5,6,7,15,16,17,18,21,22,23,24,25,29,31,],[10,-4,-6,-7,-8,-5,-9,-10,-12,-15,-11,-13,-14,-17,-16,-18,]),',':([5,6,7,16,17,18,21,22,23,24,25,29,31,],[11,-7,-8,-9,-10,-12,-15,-11,-13,-14,-17,-16,-18,]),':':([8,9,28,],[12,13,30,]),'VALOR':([12,19,30,],[16,21,31,]),'-':([13,20,],[19,19,]),';':([17,18,21,22,23,24,25,29,31,],[20,-12,-15,-11,-13,27,-17,-16,-18,]),'+':([21,27,],[26,26,]),}
+_lr_action_items = {'ID':([0,10,11,26,],[8,8,8,28,]),'IDL':([0,10,11,],[9,9,9,]),'$end':([1,2,3,4,5,6,7,14,15,16,17,18,21,22,23,24,25,27,30,],[0,-1,-3,-4,-6,-7,-8,-2,-5,-9,-10,-12,-15,-11,-13,-14,-17,-16,-18,]),'LINHA_B':([3,4,5,6,7,15,16,17,18,21,22,23,24,25,27,30,],[10,-4,-6,-7,-8,-5,-9,-10,-12,-15,-11,-13,-14,-17,-16,-18,]),',':([5,6,7,16,17,18,21,22,23,24,25,27,30,],[11,-7,-8,-9,-10,-12,-15,-11,-13,-14,-17,-16,-18,]),':':([8,9,28,],[12,13,29,]),'VALOR':([12,19,29,],[16,21,30,]),'-':([13,20,],[19,19,]),';':([17,18,21,22,23,24,25,27,30,],[20,-12,-15,-11,-13,-14,-17,-16,-18,]),'+':([21,24,25,27,30,],[26,26,-17,-16,-18,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'dic':([0,],[1,]),'Es':([0,10,],[2,14,]),'E':([0,10,],[3,3,]),'Itens':([0,10,11,],[4,4,15,]),'Item':([0,10,11,],[5,5,5,]),'AtrC':([0,10,11,],[6,6,6,]),'Ling':([0,10,11,],[7,7,7,]),'Ts':([13,],[17,]),'T':([13,20,],[18,22,]),'AtrTs':([21,],[23,]),'AtrTs2':([21,],[24,]),'AtrT':([21,27,],[25,29,]),}
+_lr_goto_items = {'dic':([0,],[1,]),'Es':([0,10,],[2,14,]),'E':([0,10,],[3,3,]),'Itens':([0,10,11,],[4,4,15,]),'Item':([0,10,11,],[5,5,5,]),'AtrC':([0,10,11,],[6,6,6,]),'Ling':([0,10,11,],[7,7,7,]),'Ts':([13,],[17,]),'T':([13,20,],[18,22,]),'AtrTs':([21,],[23,]),'AtrTs2':([21,],[24,]),'AtrT':([21,24,],[25,27,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -27,22 +27,22 @@ for _k, _v in _lr_goto_items.items():
 del _lr_goto_items
 _lr_productions = [
   ("S' -> dic","S'",1,None,None,None),
-  ('dic -> Es','dic',1,'p_1','tpcyacc.py',6),
-  ('Es -> E LINHA_B Es','Es',3,'p_2','tpcyacc.py',11),
-  ('Es -> E','Es',1,'p_3','tpcyacc.py',16),
-  ('E -> Itens','E',1,'p_4','tpcyacc.py',21),
-  ('Itens -> Item , Itens','Itens',3,'p_5','tpcyacc.py',26),
-  ('Itens -> Item','Itens',1,'p_6','tpcyacc.py',31),
-  ('Item -> AtrC','Item',1,'p_7','tpcyacc.py',36),
-  ('Item -> Ling','Item',1,'p_8','tpcyacc.py',41),
-  ('AtrC -> ID : VALOR','AtrC',3,'p_9','tpcyacc.py',46),
-  ('Ling -> IDL : Ts','Ling',3,'p_10','tpcyacc.py',51),
-  ('Ts -> Ts ; T','Ts',3,'p_11','tpcyacc.py',56),
-  ('Ts -> T','Ts',1,'p_12','tpcyacc.py',60),
-  ('T -> - VALOR AtrTs','T',3,'p_13','tpcyacc.py',64),
-  ('AtrTs -> AtrTs2','AtrTs',1,'p_14','tpcyacc.py',69),
-  ('AtrTs -> <empty>','AtrTs',0,'p_15','tpcyacc.py',73),
-  ('AtrTs2 -> AtrTs2 ; AtrT','AtrTs2',3,'p_16','tpcyacc.py',77),
-  ('AtrTs2 -> AtrT','AtrTs2',1,'p_17','tpcyacc.py',81),
-  ('AtrT -> + ID : VALOR','AtrT',4,'p_19','tpcyacc.py',85),
+  ('dic -> Es','dic',1,'p_1','myYacc.py',6),
+  ('Es -> E LINHA_B Es','Es',3,'p_2','myYacc.py',11),
+  ('Es -> E','Es',1,'p_3','myYacc.py',16),
+  ('E -> Itens','E',1,'p_4','myYacc.py',20),
+  ('Itens -> Item , Itens','Itens',3,'p_5','myYacc.py',26),
+  ('Itens -> Item','Itens',1,'p_6','myYacc.py',31),
+  ('Item -> AtrC','Item',1,'p_7','myYacc.py',36),
+  ('Item -> Ling','Item',1,'p_8','myYacc.py',41),
+  ('AtrC -> ID : VALOR','AtrC',3,'p_9','myYacc.py',46),
+  ('Ling -> IDL : Ts','Ling',3,'p_10','myYacc.py',51),
+  ('Ts -> Ts ; T','Ts',3,'p_11','myYacc.py',56),
+  ('Ts -> T','Ts',1,'p_12','myYacc.py',60),
+  ('T -> - VALOR AtrTs','T',3,'p_13','myYacc.py',64),
+  ('AtrTs -> AtrTs2','AtrTs',1,'p_14','myYacc.py',68),
+  ('AtrTs -> <empty>','AtrTs',0,'p_15','myYacc.py',72),
+  ('AtrTs2 -> AtrTs2 AtrT','AtrTs2',2,'p_16','myYacc.py',76),
+  ('AtrTs2 -> AtrT','AtrTs2',1,'p_17','myYacc.py',80),
+  ('AtrT -> + ID : VALOR','AtrT',4,'p_19','myYacc.py',84),
 ]
