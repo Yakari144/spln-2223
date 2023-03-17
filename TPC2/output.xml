@@ -242,8 +242,7 @@ $ SIN.- accidente laboral
 @ work accident
 @  pt 
 @ acidente de trabalho
-%%%C 20 accidente isquémico 
-%%%L transitorio m
+%%%C 20 accidente isquémico transitorio m
 § Semioloxía Patoloxías
 $ SIN.- ataque isquémico transitorio; AIT 
  (sg)
@@ -58507,8 +58506,7 @@ $ SIN.- TC (sg)
 %%%L tomografía computadorizada 
 %%%L por emisión de fotón único
 $ Vid.- tomografía por emisión de fotón  único
-%%%C 4937 tomografía por emisión de 
-%%%L fotón único f
+%%%C 4937 tomografía por emisión de fotón único f
 § Probas complementarias
 $ SIN.- tomografía computadorizada por  emisión de fotón único; SPECT (sg)
 @  es 
@@ -58527,8 +58525,7 @@ $ SIN.- tomografía computadorizada por  emisión de fotón único; SPECT (sg)
 @ tomografia por emissão  de fotão único [Pt.]
 @ ; 
 @ tomografia por  emissão de fóton único [Br.]
-%%%C 4938 tomografía por emisión de 
-%%%L positróns f
+%%%C 4938 tomografía por emisión de positróns f
 § Probas complementarias
 $ SIN.- PET (sg); TEP (sg)
 @  es 
@@ -59154,8 +59151,7 @@ $ Vid.- suor
 %%%L transposición das grandes 
 %%%L arterias 
 $ Vid.- transposición dos  grandes vasos
-%%%C 4991 transposición dos grandes 
-%%%L vasos f
+%%%C 4991 transposición dos grandes vasos f
 § Patoloxías
 $ SIN.- transposición das grandes arterias
 @  es 
@@ -59344,8 +59340,7 @@ $ Vid.- ciclotimia
 @ sleep disorder
 @  pt 
 @ transtorno do sono
-%%%C 5009 trastorno 
-%%%L obsesivo-compulsivo m
+%%%C 5009 trastorno obsesivo-compulsivo m
 § Patoloxías
 $ SIN.- síndrome obsesiva-compulsiva (f);  neurose obsesiva-compulsiva (f);  neurose obsesivo-compulsiva (f)
 @  es 
@@ -60415,8 +60410,7 @@ $ Vid.- óso lacrimal
 @ ointment
 @  pt 
 @ ungüento
-%%%C 5086 unidade de coidados 
-%%%L intensivos f
+%%%C 5086 unidade de coidados intensivos f
 § Termos xerais
 $ SIN.- UCI (sg)
 @  es 
@@ -60444,8 +60438,7 @@ $ SIN.- UCI (sg)
 @ palliative care unit
 @  pt 
 @ unidade de cuidados paliativos
-%%%C 5088 unidade formadora de 
-%%%L colonias f
+%%%C 5088 unidade formadora de colonias f
 § Histoloxía
 $ SIN.- UFC (sg)
 @  es 
@@ -62013,8 +62006,7 @@ $ Vid.- vea braquial
 @ vetor [Br]
 %%%L veleno 
 $ Vid.- tóxico
-%%%C 5219 velocidade de sedimentación 
-%%%L dos glóbulos vermellos f
+%%%C 5219 velocidade de sedimentación dos glóbulos vermellos f
 § Probas complementarias
 $ SIN.- velocidade de sedimentación  globular; VSG (sg)
 @  es 
@@ -62961,8 +62953,7 @@ $ SIN.- virus da gripe
 @ vírus da influenza
 @ ; 
 @ vírus influenza
-%%%C 5293 virus da inmunodeficiencia 
-%%%L humana m
+%%%C 5293 virus da inmunodeficiencia humana m
 § Etiopatoxenia
 $ SIN.- VIH (sg); virus da SIDA
 @  es 
@@ -63360,8 +63351,7 @@ $ SIN.- VD (sg)
 @ ejection volume
 @  pt 
 @ volume de ejeção
-%%%C 5323 volume de reserva 
-%%%L expiratoria m
+%%%C 5323 volume de reserva expiratoria m
 §  Fisioloxía
 $ SIN.- VRE (sg)
 @  es 
@@ -63378,8 +63368,7 @@ $ SIN.- VRE (sg)
 @ ; 
 @ VRE 
  (sg)
-%%%C 5324 volume de reserva 
-%%%L inspiratoria m
+%%%C 5324 volume de reserva inspiratoria m
 § Fisioloxía
 $ SIN.- VRI (sg)
 @  es 

@@ -219,6 +219,7 @@ def marcaEL(text):
             lVid.append(i[1:])
     idx=0
     while idx < len(lVid):
+        print(lVid[idx])
         if re.match(r'^Vid\.-(.*)', lVid[idx]):
             vid+=re.match(r'^Vid\.-(.*)', lVid[idx]).group(1)
         idx+=1
