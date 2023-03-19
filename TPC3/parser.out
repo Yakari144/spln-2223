@@ -1,0 +1,378 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> dic
+Rule 1     dic -> Es
+Rule 2     Es -> E LINHA_B Es
+Rule 3     Es -> E
+Rule 4     E -> Itens
+Rule 5     Itens -> Item , Itens
+Rule 6     Itens -> Item
+Rule 7     Item -> AtrC
+Rule 8     Item -> Ling
+Rule 9     AtrC -> ID : VALOR
+Rule 10    Ling -> IDL : Ts
+Rule 11    Ts -> Ts ; T
+Rule 12    Ts -> T
+Rule 13    T -> - VALOR AtrTs
+Rule 14    AtrTs -> AtrTs2
+Rule 15    AtrTs -> <empty>
+Rule 16    AtrTs2 -> AtrTs2 AtrT
+Rule 17    AtrTs2 -> AtrT
+Rule 18    AtrT -> + ID : VALOR
+
+Terminals, with rules where they appear
+
++                    : 18
+,                    : 5
+-                    : 13
+:                    : 9 10 18
+;                    : 11
+ID                   : 9 18
+IDL                  : 10
+LINHA_B              : 2
+VALOR                : 9 13 18
+error                : 
+
+Nonterminals, with rules where they appear
+
+AtrC                 : 7
+AtrT                 : 16 17
+AtrTs                : 13
+AtrTs2               : 14 16
+E                    : 2 3
+Es                   : 1 2
+Item                 : 5 6
+Itens                : 4 5
+Ling                 : 8
+T                    : 11 12
+Ts                   : 10 11
+dic                  : 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . dic
+    (1) dic -> . Es
+    (2) Es -> . E LINHA_B Es
+    (3) Es -> . E
+    (4) E -> . Itens
+    (5) Itens -> . Item , Itens
+    (6) Itens -> . Item
+    (7) Item -> . AtrC
+    (8) Item -> . Ling
+    (9) AtrC -> . ID : VALOR
+    (10) Ling -> . IDL : Ts
+
+    ID              shift and go to state 8
+    IDL             shift and go to state 9
+
+    dic                            shift and go to state 1
+    Es                             shift and go to state 2
+    E                              shift and go to state 3
+    Itens                          shift and go to state 4
+    Item                           shift and go to state 5
+    AtrC                           shift and go to state 6
+    Ling                           shift and go to state 7
+
+state 1
+
+    (0) S' -> dic .
+
+
+
+state 2
+
+    (1) dic -> Es .
+
+    $end            reduce using rule 1 (dic -> Es .)
+
+
+state 3
+
+    (2) Es -> E . LINHA_B Es
+    (3) Es -> E .
+
+    LINHA_B         shift and go to state 10
+    $end            reduce using rule 3 (Es -> E .)
+
+
+state 4
+
+    (4) E -> Itens .
+
+    LINHA_B         reduce using rule 4 (E -> Itens .)
+    $end            reduce using rule 4 (E -> Itens .)
+
+
+state 5
+
+    (5) Itens -> Item . , Itens
+    (6) Itens -> Item .
+
+    ,               shift and go to state 11
+    LINHA_B         reduce using rule 6 (Itens -> Item .)
+    $end            reduce using rule 6 (Itens -> Item .)
+
+
+state 6
+
+    (7) Item -> AtrC .
+
+    ,               reduce using rule 7 (Item -> AtrC .)
+    LINHA_B         reduce using rule 7 (Item -> AtrC .)
+    $end            reduce using rule 7 (Item -> AtrC .)
+
+
+state 7
+
+    (8) Item -> Ling .
+
+    ,               reduce using rule 8 (Item -> Ling .)
+    LINHA_B         reduce using rule 8 (Item -> Ling .)
+    $end            reduce using rule 8 (Item -> Ling .)
+
+
+state 8
+
+    (9) AtrC -> ID . : VALOR
+
+    :               shift and go to state 12
+
+
+state 9
+
+    (10) Ling -> IDL . : Ts
+
+    :               shift and go to state 13
+
+
+state 10
+
+    (2) Es -> E LINHA_B . Es
+    (2) Es -> . E LINHA_B Es
+    (3) Es -> . E
+    (4) E -> . Itens
+    (5) Itens -> . Item , Itens
+    (6) Itens -> . Item
+    (7) Item -> . AtrC
+    (8) Item -> . Ling
+    (9) AtrC -> . ID : VALOR
+    (10) Ling -> . IDL : Ts
+
+    ID              shift and go to state 8
+    IDL             shift and go to state 9
+
+    E                              shift and go to state 3
+    Es                             shift and go to state 14
+    Itens                          shift and go to state 4
+    Item                           shift and go to state 5
+    AtrC                           shift and go to state 6
+    Ling                           shift and go to state 7
+
+state 11
+
+    (5) Itens -> Item , . Itens
+    (5) Itens -> . Item , Itens
+    (6) Itens -> . Item
+    (7) Item -> . AtrC
+    (8) Item -> . Ling
+    (9) AtrC -> . ID : VALOR
+    (10) Ling -> . IDL : Ts
+
+    ID              shift and go to state 8
+    IDL             shift and go to state 9
+
+    Item                           shift and go to state 5
+    Itens                          shift and go to state 15
+    AtrC                           shift and go to state 6
+    Ling                           shift and go to state 7
+
+state 12
+
+    (9) AtrC -> ID : . VALOR
+
+    VALOR           shift and go to state 16
+
+
+state 13
+
+    (10) Ling -> IDL : . Ts
+    (11) Ts -> . Ts ; T
+    (12) Ts -> . T
+    (13) T -> . - VALOR AtrTs
+
+    -               shift and go to state 19
+
+    Ts                             shift and go to state 17
+    T                              shift and go to state 18
+
+state 14
+
+    (2) Es -> E LINHA_B Es .
+
+    $end            reduce using rule 2 (Es -> E LINHA_B Es .)
+
+
+state 15
+
+    (5) Itens -> Item , Itens .
+
+    LINHA_B         reduce using rule 5 (Itens -> Item , Itens .)
+    $end            reduce using rule 5 (Itens -> Item , Itens .)
+
+
+state 16
+
+    (9) AtrC -> ID : VALOR .
+
+    ,               reduce using rule 9 (AtrC -> ID : VALOR .)
+    LINHA_B         reduce using rule 9 (AtrC -> ID : VALOR .)
+    $end            reduce using rule 9 (AtrC -> ID : VALOR .)
+
+
+state 17
+
+    (10) Ling -> IDL : Ts .
+    (11) Ts -> Ts . ; T
+
+    ,               reduce using rule 10 (Ling -> IDL : Ts .)
+    LINHA_B         reduce using rule 10 (Ling -> IDL : Ts .)
+    $end            reduce using rule 10 (Ling -> IDL : Ts .)
+    ;               shift and go to state 20
+
+
+state 18
+
+    (12) Ts -> T .
+
+    ;               reduce using rule 12 (Ts -> T .)
+    ,               reduce using rule 12 (Ts -> T .)
+    LINHA_B         reduce using rule 12 (Ts -> T .)
+    $end            reduce using rule 12 (Ts -> T .)
+
+
+state 19
+
+    (13) T -> - . VALOR AtrTs
+
+    VALOR           shift and go to state 21
+
+
+state 20
+
+    (11) Ts -> Ts ; . T
+    (13) T -> . - VALOR AtrTs
+
+    -               shift and go to state 19
+
+    T                              shift and go to state 22
+
+state 21
+
+    (13) T -> - VALOR . AtrTs
+    (14) AtrTs -> . AtrTs2
+    (15) AtrTs -> .
+    (16) AtrTs2 -> . AtrTs2 AtrT
+    (17) AtrTs2 -> . AtrT
+    (18) AtrT -> . + ID : VALOR
+
+    ;               reduce using rule 15 (AtrTs -> .)
+    ,               reduce using rule 15 (AtrTs -> .)
+    LINHA_B         reduce using rule 15 (AtrTs -> .)
+    $end            reduce using rule 15 (AtrTs -> .)
+    +               shift and go to state 26
+
+    AtrTs                          shift and go to state 23
+    AtrTs2                         shift and go to state 24
+    AtrT                           shift and go to state 25
+
+state 22
+
+    (11) Ts -> Ts ; T .
+
+    ;               reduce using rule 11 (Ts -> Ts ; T .)
+    ,               reduce using rule 11 (Ts -> Ts ; T .)
+    LINHA_B         reduce using rule 11 (Ts -> Ts ; T .)
+    $end            reduce using rule 11 (Ts -> Ts ; T .)
+
+
+state 23
+
+    (13) T -> - VALOR AtrTs .
+
+    ;               reduce using rule 13 (T -> - VALOR AtrTs .)
+    ,               reduce using rule 13 (T -> - VALOR AtrTs .)
+    LINHA_B         reduce using rule 13 (T -> - VALOR AtrTs .)
+    $end            reduce using rule 13 (T -> - VALOR AtrTs .)
+
+
+state 24
+
+    (14) AtrTs -> AtrTs2 .
+    (16) AtrTs2 -> AtrTs2 . AtrT
+    (18) AtrT -> . + ID : VALOR
+
+    ;               reduce using rule 14 (AtrTs -> AtrTs2 .)
+    ,               reduce using rule 14 (AtrTs -> AtrTs2 .)
+    LINHA_B         reduce using rule 14 (AtrTs -> AtrTs2 .)
+    $end            reduce using rule 14 (AtrTs -> AtrTs2 .)
+    +               shift and go to state 26
+
+    AtrT                           shift and go to state 27
+
+state 25
+
+    (17) AtrTs2 -> AtrT .
+
+    +               reduce using rule 17 (AtrTs2 -> AtrT .)
+    ;               reduce using rule 17 (AtrTs2 -> AtrT .)
+    ,               reduce using rule 17 (AtrTs2 -> AtrT .)
+    LINHA_B         reduce using rule 17 (AtrTs2 -> AtrT .)
+    $end            reduce using rule 17 (AtrTs2 -> AtrT .)
+
+
+state 26
+
+    (18) AtrT -> + . ID : VALOR
+
+    ID              shift and go to state 28
+
+
+state 27
+
+    (16) AtrTs2 -> AtrTs2 AtrT .
+
+    +               reduce using rule 16 (AtrTs2 -> AtrTs2 AtrT .)
+    ;               reduce using rule 16 (AtrTs2 -> AtrTs2 AtrT .)
+    ,               reduce using rule 16 (AtrTs2 -> AtrTs2 AtrT .)
+    LINHA_B         reduce using rule 16 (AtrTs2 -> AtrTs2 AtrT .)
+    $end            reduce using rule 16 (AtrTs2 -> AtrTs2 AtrT .)
+
+
+state 28
+
+    (18) AtrT -> + ID . : VALOR
+
+    :               shift and go to state 29
+
+
+state 29
+
+    (18) AtrT -> + ID : . VALOR
+
+    VALOR           shift and go to state 30
+
+
+state 30
+
+    (18) AtrT -> + ID : VALOR .
+
+    +               reduce using rule 18 (AtrT -> + ID : VALOR .)
+    ;               reduce using rule 18 (AtrT -> + ID : VALOR .)
+    ,               reduce using rule 18 (AtrT -> + ID : VALOR .)
+    LINHA_B         reduce using rule 18 (AtrT -> + ID : VALOR .)
+    $end            reduce using rule 18 (AtrT -> + ID : VALOR .)
+
