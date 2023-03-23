@@ -1,0 +1,3 @@
+uma versao instalavel do tokenizer
+dicionario das abreviaturas e os capitulos a serem carregados de um ficheiro
+uma opcao de linha de comandos que diga a lingua para saber qual ir buscar (usar pt como linha default) (por exemplo "-l pt" ou "-l en")

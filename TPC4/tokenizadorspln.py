@@ -79,4 +79,8 @@ print(text)
 #### TPC
 
 # DEFINIR O TRABALHO PRATICO
-# Avancar e por de forma a que aparecesse como ferramenta, como fazer para ficar superferramenta ou seja se o ficheiro viesse do word tambem podia usa-lo(talvez usar um conversor) e arranjarmos ferramentas que ja existam para nos ajudar top. possivel se indique ao utilizdor que tenha que indicar os poemas ou indicar qual o tipo da quebra de pagina, por ex
+# Avancar e por de forma a que aparecesse como ferramenta, 
+# como fazer para ficar superferramenta ou seja se o ficheiro viesse do word 
+# tambem podia usa-lo(talvez usar um conversor) e arranjarmos ferramentas que 
+# ja existam para nos ajudar top. possivel se indique ao utilizdor que tenha 
+# que indicar os poemas ou indicar qual o tipo da quebra de pagina, por ex
